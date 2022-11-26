@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <title>Zoey Cafe Home</title>
+    
+    <style>
+      .container address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background: url('lunch_img.jpg') center center no-repeat;
+        background-size: cover;
+        font-family: "Marcellus", serif;
+        color: rgb(210, 20, 20);
+      }
+      
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        align-items: stretch;
+      }
+      
+      .item {
+        position: relative;
+        width: 380px;
+        padding: 30px;
+        border-left: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-radius: 0 0 15px 15px;
+        
+      }
+      
+      .heading {
+        display: flex;
+        position: absolute;
+        align-items: flex-end;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        transform: translateY(-100%);
+        color: #fff;
+        
+      }
+      
+      .heading::before {
+        content: "";
+        flex: 1;
+        height: 15px;
+        margin-right: 15px;
+        border-top: 5px solid #fff;
+        border-left: 5px solid #fff;
+        border-radius: 15px 0;
+        transform: translateX(-5px);
+      }
+      
+      .heading::after {
+        content: "";
+        flex: 1;
+        height: 15px;
+        margin-left: 15px;
+        border-top: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-radius: 0 15px;
+        transform: translateX(5px);
+      }
+      
+      .paragraph {
+        font-size: 20px;
+        line-height: 1.5;
+        color: rgb(255, 255, 255);
+      }
+      
+    </style>
+    
+</head>
+
+<body>
+  <div class="header" style="background-color: rgba(252,254,255);">
+    <marquee behavior="scroll" direction="left"><b>We are now on FoodPanda.....order now!</b></marquee>
+    <center><img src="zoey_logo_crop2.jpg" alt="zoey logo" height="100px"  width="200px"></center>
+  </div>
+
+  <nav class="navbar navbar-expand-sm navbar-light sticky-top" style="background-color: rgba(241, 111, 35);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="zoey_logo_crop2.jpg" alt="Zoey Logo" width="90" height="40"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+  <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <h6><a class="nav-link text-white" href="#">HOME</a>
+      </li></h6>
+        <h6><a class="nav-link text-white" href="#">DINE-IN</a>
+      </li></h6>
+      <li class="nav-item">
+        <h6><a class="nav-link text-white" href="#">CATERING</a>
+      </li></h6>
+      <li class="nav-item">
+        <h6><a class="nav-link text-white" href="#">GALLERY</a>
+      </li></h6>
+      <li class="nav-item">
+        <h6><a class="nav-link text-white" href="#">OUR STORY</a>
+      </li></h6>
+      <li class="nav-item">
+        <h6><a class="nav-link text-white" href="#">CONTACT</a>
+      </li></h6>
+    </ul>
+      
+  <form class="d-flex">
+    <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary" type="button">Search</button>
+  </form>
+</div>
+
+    </div>
+</nav><br>
+
+<div class="container-fluid">
+  <div class="row g=0 border" style="height: 250px;">
+    <div class="col-sm-3" id="col-1-breakfast" style="background-image: url('breakfast_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br> 
+      </div>
+    <div class="col-sm-3 bg-dark text-white text-center" id="lunch">
+      <a href=""><h1 class="display-5 p-5 text-white">LUNCH</h1></a>
+    </div>
+
+    <div class="col-sm-3" id="col-3-dinner-img" style="background-image: url('dinner_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
+    </div>
+      
+  <div class="col-sm-3 bg-dark text-white text-center" id="dessert">
+    <a href=""><h1 class="display-5 p-5 text-white">DESSERT</h1></a>
+  </div>
+    
+  </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row g=0 border" style="height: 250px;">
+      <div class="col-sm-3 bg-dark text-white text-center" id="breakfast">
+        <a href=""><h1 class="display-5 p-5 text-white">BREAKFAST</h1></a>
+        </div>
+    <div class="col-sm-3" id="col-1-breakfast" style="background-image: url('lunch_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
+    </div>
+      
+    <div class="col-sm-3 bg-dark text-white text-center" id="dinner">
+      <a href=""><h1 class="display-5 p-5 text-white">DINNER</h1></a>
+    </div>
+
+    <div class="col-sm-3" id="col-3-dinner-img" style="background-image: url('dessert_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
+    </div>
+      
+      
+    
+    </div>
+  </div>
+    <br><br>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            BIRTHDAYS
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>Birthday</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            WEDDINGS
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>Wedding</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            ANNIVERSARIES
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Anniversaries</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            GRADUATIONS
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Graduations</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            SEMINARS | OFFICE MEETINGS etc.
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Seminars & Office Meetings</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            OUTDOOR CATERINGS
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Outdoor Caterings</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            GRAZING TABLE
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Grazing Table</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            DESSERT BUFFETS
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Dessert Buffets</strong> Lorem ipsum
+          </div>
+        </div>
+      </div>
+    </div>
+
+<br><br><br><br><br><br><br><br>
+
+    <div class="container-fluid" id="container address" style="background-color: rgba(240, 95, 12, 0.918);">
+      <div class="row p-4" id="row branches map">
+        <div class="col-7" id="col_branches" style="background-image: url('column-1\ address_img.jpg'); background-size: cover; padding: 125px; padding-left: 1px;">
+          <div class="ui">
+            <ul class="list">
+              <li class="item">
+                <div class="heading">Ubaldo</div>
+                <p class="paragraph"><b>Bro. Raymund Jeffrey Road corner Badelles St. Ext., Iligan City, Philippines<br><br>
+                  (063) 228 0648<br>
+                  zoey_cafe@yahoo.com<br><br>
+                Mon-Sat 10:00 - 19:15<br>
+              Sun   10:00 - 19:15</b></p>
+              </li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-5 p-4 bg-light" id="col_map">
+          <div class="float-end"><div class="mapouter"><div class="gmap_canvas"><iframe width="528" height="493" id="gmap_canvas" src="https://maps.google.com/maps?q=zoey%20iligan%20city&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:493px;width:528px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:493px;width:528px;}</style></div></div>
+        </div></div>
+      </div>
+
+    </div>
+    <br><br><br>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
